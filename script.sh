@@ -1,6 +1,6 @@
 #!/bin/bash
 cat /proc/cpuinfo | grep flag | head -1
-cd /home/grid/testbed/tb191/Lab/vec_samples/src 
+cd /home/grid/testbed/tb210/lab/vec_samples/src 
 ml icc
 arr=( "-xSSE2" "-xSSE3" "-xAVX"  )
 for j in "${arr[@]}"; do
